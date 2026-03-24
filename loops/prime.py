@@ -1,13 +1,12 @@
-num = int(input("Enter number: "))
+#Swap two numbers without using third variable
 
-if num > 1:
-    for i in range(2, num):
-        if num % i == 0:
-            print("Not Prime")
-            break
-    else:
-        print("Prime")
-else:
-    print("Not Prime")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
+a = a + b
+b = a - b
+a = a - b
 
+print("After swapping:")
+print("a =", a)
+print("b =", b)
